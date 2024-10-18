@@ -1,7 +1,7 @@
 
 import './App.css';
 import Api from './Component/Api';
-import index from './index.css'
+
 function App() {
   return (
     <div className="App">
