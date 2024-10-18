@@ -1,0 +1,91 @@
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    font-family: 'poppins';
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Appy {
+    text-align: center;
+    padding: 30px;
+    border: 2px solid black;
+    margin: 40px auto;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  h3 span {
+    color: #3498db;
+  }
+  
+  .widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    border: 2px solid red;
+  }
+  
+  .widget .box:nth-child(odd){
+   
+    background: #111;
+    color: white;
+  }
+  
+   .widget .box:nth-child(even){
+   
+    background: white;
+    color: black;
+  }
+
+
+  .box {
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 29%; /* Adjust this for the card width */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 2px solid black;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+  }
+  
+  .box img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 2%;
+    
+  }
+ 
+  .box p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  @media (max-width:768px) {
+   .widget {
+        flex-direction: columns;
+        align-items: center;  
+        width: 100%; 
+    }
+  .box{
+    width: 100%;
+  }
+  
+  .box ,h2{
+    font-size: 1rem;
+  }
+  }
+  
